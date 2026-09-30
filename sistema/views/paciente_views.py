@@ -1,11 +1,43 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
+from sistema.models import Paciente
 
 # Create your views here.
 # VIEWS -> retornam algo, são funções, request -> response
 # View responsável pela tela inicial do paciente
-def paciente_view(request):
-    print('Página paciente funcionou')
-    return HttpResponse('Página inicial do paciente')
+def index(request):
+    return render(
+        request, 
+        'global/base.html',
+        )
+
+
+# View responsável por listar todos os pacientes
+def listar_pacientes(request):
+    pacientes = Paciente.objects.all() # -> [obj1, obj2, obj3]
+    
+    context =  {
+        'pacientes': pacientes,
+    }
+    
+    return render(
+        request,
+        'paciente/listar.html',
+        context,
+    )
+
+
+
+    
+
+
+
+
+# GLOBAL -> A uma página inteira
+# PARTIALS -> Uma parte da página (header, footer, formulário)
+
+# SPA
+# MVT -> Templates/global/base.html
+
 
 
