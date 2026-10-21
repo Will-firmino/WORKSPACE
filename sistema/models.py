@@ -48,3 +48,4 @@ class Consulta(models.Model):
             ('R', 'Realizada'),
         ]
     )
+    

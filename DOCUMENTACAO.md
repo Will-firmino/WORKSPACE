@@ -24,3 +24,4 @@
 
  2. Na Exibição do Portal administrativo, deverá ser apresentado:
  - Id, Nome, email, telefone, especialidade, crm, ativo 
+
