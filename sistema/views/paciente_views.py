@@ -5,7 +5,7 @@ from sistema.models import Paciente
 # Create your views here.
 # VIEWS -> retornam algo, são funções, request -> response
 # View responsável pela tela inicial do paciente
-def index(request):
+def index_paciente(request):
     return render(
         request, 
         'index.html',
