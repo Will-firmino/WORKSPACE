@@ -4,6 +4,5 @@ from .consulta_urls import urlpatterns as consulta_urlpatterns
 
 urlpatterns = paciente_urlpatterns + medico_urlpatterns + consulta_urlpatterns
 
-
     
 
