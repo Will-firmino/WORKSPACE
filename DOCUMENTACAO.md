@@ -24,3 +24,8 @@
 > redirect('sistema:medico-list') -> Fica numa view e informa que quando uma ação for realizada, o usuário será redirecionado.
  
 
+# 25/11/2026
+- /medico -> 200 -> página inicial do médico
+- /medico/novo -> 200 -> cadastro do médico, ou seja, formulário
+- /medico/listagem -> 200 > listagem de médicos
+
